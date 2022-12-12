@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my Bank</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="bg-green-300">
+     
+        <h1 class="text-center my-10 font-bold text-5xl"><span class="text-red-400">My</span> <span>B<span class="text-red-400">an</span>k</span> </h1>
+        <div class="p-14">
+            <div class="grid grid-cols-3 gap-14  justify-center w-full">
+                <div class="bg-slate-800 py-10 rounded-xl">
+                  <h2 class="text-center text-white text-3xl ">Deposite</h2>
+                  <p class="text-center text-2xl text-white mt-3">$ <span id="result1">00</span> </p>
+                </div>
+                <div class="bg-slate-800 py-10 rounded-xl ">
+                    <h2 class="text-center text-white text-3xl ">Balance</h2>
+                    <p class="text-center text-2xl text-white mt-3">$ <span id="balance">1000</span> </p>
+                  </div>
+
+                <div class="bg-slate-800 py-10 rounded-xl ">
+                    <h2 class="text-center text-white text-3xl ">WithDraw</h2>
+                    <p class="text-center text-2xl text-white mt-3">$ <span id="result2">00</span> </p>
+                  </div>
+                  
+            </div>
+           
+
+            <div class="grid grid-cols-3 gap-14  justify-center w-full mt-10 ">
+                <div class="bg-slate-800 py-5 text-center rounded">
+                    <input id="input-1" class="text-center py-2 rounded text-lg" type="number" placeholder="Enter Your Amount">
+                    <button id="btn-1" class="bg-green-500 py-3 px-3 rounded-xl ml-[-2rem] font-bold text-white">Add Deposite</button>
+                </div>
+                <div></div>
+                <div class="bg-slate-800 py-5 text-center rounded">
+                    <input id="input-2" class="text-center py-2 rounded text-lg" type="number" placeholder="Enter Your Amount">
+                    <button id="btn-2" class="bg-red-700 py-3 px-3 rounded-xl ml-[-2rem] font-bold text-white">WithDraw</button>
+                </div>
+            </div>
+        </div>
+     
+   
+        <!-- <script>
+         
+       
+
+           
+            // const balance = document.getElementById('balance');
+            // const withDraw = document.getElementById('with-draw');
+
+           
+            // const inputWithdraw = document.getElementById('input-withdraw');
+
+
+           
+
+
+       
+//     function updateTotalBalance(p) {
+//            const totalBalance = document.getElementById("balance");
+//            const inputId = document.getElementById(p);
+
+//        if (balance === "input-deposite") {
+//            totalBalance.innerText =Number(totalBalance.innerText) + Number(p.value);
+//         } else {
+//            totalBalance.innerText =Number(totalBalance.innerText) - Number(p.value);
+//         }
+//          p.value = "";
+// }
+
+
+    
+    // withdrawBtn.addEventListener("click", function () {
+    //     const withdrawBlance = document.getElementById("with-draw");
+    //     const totalBalance = document.getElementById("balance");
+    //     const inputId = document.getElementById("input-withdraw");
+
+    //     if (Number(totalBalance.innerText) <= 500) {
+    //       return alert("No");
+    //     }
+
+    //     withdrawBlance.innerText = getValue("withdraw", "input-withdraw");
+    //     updateTotalBalance("input-withdraw");
+    //   });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            // const deposite = document.getElementById('deposite');
+            // const balance = document.getElementById('balance');
+            // const withDraw = document.getElementById('with-draw');
+
+            // const inputDeposite = document.getElementById('input-deposite');
+            // const inputWithdraw = document.getElementById('input-withdraw');
+
+
+            // const addDeposite = document.getElementById('add-deposite');
+            // const addWithdraw = document.getElementById('add-withdraw');
+
+            // addDeposite.addEventListener('click',function () {
+            //     const depositeAdd = Number(deposite.innerText);
+            //     const inputDepositeAdd = Number(inputDeposite.value)
+            //     deposite.innerText = depositeAdd + inputDepositeAdd;
+            //     balance.innerText = Number(balance.innerText) + inputDepositeAdd;
+            //     inputDeposite.value="";
+            // })
+
+            // addWithdraw.addEventListener('click',function () {
+            //     const withDrawAdd = Number(withDraw.innerText);
+            //     const inputWithdrawAdd = Number(inputWithdraw.value)
+               
+            //     if (Number(balance.innerText) < 500) {
+            //         alert('no balance')
+            //         balance.innerText = "500"
+            //         withDraw.innerText="0"
+            //     }
+            //     else{
+            //         withDraw.innerText = withDrawAdd + inputWithdrawAdd;
+            //         balance.innerText = Number(balance.innerText) - inputWithdrawAdd;
+            //     }
+            //     inputWithdraw.value="";
+            // })
+
+
+
+
+
+        </script> -->
+
+        <script src="./app.js"></script>
+</body>
+</html>
